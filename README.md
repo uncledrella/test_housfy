@@ -65,11 +65,11 @@ La aplicación corre directamente bajo http://localhost. Se recomienda utilizar 
 
 | Method | URI | Parámetros | |
 | ------ | ------ | ------ | ------ |
-|GET | /office | | obtener listado de oficinas |
-|GET | /office/1 | | obtener ficha oficina con ID 1 |
-|POST | /office | name, address | crear nueva oficina |
-|PUT | /office/1 | name, address | modificar oficina con ID 1 |
-|DELETE | /office/1 |  | eliminar oficina con ID 1 |
+|GET | /api/office | | obtener listado de oficinas |
+|GET | /api/office/1 | | obtener ficha oficina con ID 1 |
+|POST | /api/office | name, address | crear nueva oficina |
+|PUT | /api/office/1 | name, address | modificar oficina con ID 1 |
+|DELETE | /api/office/1 |  | eliminar oficina con ID 1 |
 
 ## Tests
 Se pueden ejecutar los tests de la siguiente manera:
