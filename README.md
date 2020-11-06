@@ -7,11 +7,14 @@ Junto a este documento se encuentran los siguientes archivos y directorios:
   
 ## Instalación
 
+```sh
+git clone https://github.com/uncledrella/test_housfy.git
+```
 En primer lugar, es necesario ubicar las dos carpetas en el directorio de trabajo deseado. En este caso vamos a suponer que se trata de la carpeta *`~/projects/test-miguelnicolas`* (si se quisiera cambiar, habría que sustituir esta ruta por la deseada en todos los comandos)
 
 En una ventana de Terminal, ejecutaremos los siguientes comandos
 ```sh
-cd ~/projects/test-miguelnicolas/housfy # nos ubicamos dentro del directorio del proyecto
+cd test_housfy/housfy # nos ubicamos dentro del directorio del proyecto
 sudo chmod -R 777 storage bootstrap/cache # da permisos de escritura al directorio de cache
 cd ../laradock # ahora nos ubicamos dentro del directorio de configuración de Docker
 docker-compose up -d nginx mysql redis # Construirá el entorno y levantará los contenedores mínimos requeridos. Puede tardar un rato la primera vez
