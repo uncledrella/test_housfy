@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "c3792d66-a29f-4b44-88eb-fcde88b145cc",
+		"name": "Housfy Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Read offices list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/office",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"office"
+					]
+				},
+				"description": "Get list of offices"
+			},
+			"response": []
+		},
+		{
+			"name": "Read office",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/office/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"office",
+						"1"
+					]
+				},
+				"description": "Get one office"
+			},
+			"response": []
+		},
+		{
+			"name": "Create office",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Housfy Postman",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Carrer d'Àvila, 126, 08018 Barcelona",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/api/office",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"office"
+					]
+				},
+				"description": "Create a new office"
+			},
+			"response": []
+		},
+		{
+			"name": "Update office",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost/api/office/1?name=Housfy [Edited]",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"office",
+						"1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Housfy [Edited]"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete office",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost/api/office/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"office",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
