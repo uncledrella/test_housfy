@@ -22,7 +22,7 @@ docker-compose exec mysql bash # entramos en el contenedor de MySQL
 mysql -uroot -proot # una vez dentro, nos logueamos como usuario Root
 ```
 Una vez dentro del entorno MySQL, ejecutaremos la *query* de para crear la base de datos con nombre **housfy**
-`CREATE DATABASE IF NOT EXISTS my_database DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;`
+`CREATE DATABASE IF NOT EXISTS housfy DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;`
 
 y saldremos del entorno y del contenedor:
 ```sh
@@ -47,9 +47,7 @@ Redis es el encargado de la cache y de la cola que la llena. Si se requiere ver 
 docker-compose up -d redis-webui
 ```
 y entrar desde el navegador a través de la URL http://localhost:9987/
-```sh
-docker-compose up -d redis-webui
-```
+
 Para que la cola de cacheado se procese, tendremos que dejar ejecutando Horizon en otra ventana de terminal:
 ```sh
 docker-compose exec workspace bash # entrar en el contenedor del entorno de trabajo
